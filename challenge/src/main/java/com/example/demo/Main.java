@@ -1,4 +1,4 @@
-package ejemplo;
+package src.main.java.com.example.demo;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -7,9 +7,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        CurrencyService service = new CurrencyService();
-        JsonGenerator generator = new JsonGenerator();
-        List<JsonGenerator.Conversion> conversiones = new ArrayList<>();
+        src.main.java.com.example.demo.CurrencyService service = new src.main.java.com.example.demo.CurrencyService();
+        src.main.java.com.example.demo.JsonGenerator generator = new src.main.java.com.example.demo.JsonGenerator();
+        List<src.main.java.com.example.demo.JsonGenerator.Conversion> conversiones = new ArrayList<>();
 
         System.out.println("Bienvenido al conversor de monedas.");
 
@@ -26,7 +26,7 @@ public class Main {
 
             try {
                 double cantidadDestino = service.convertirMoneda(monedaOrigen, monedaDestino, cantidadOrigen);
-                JsonGenerator.Conversion conversion = new JsonGenerator.Conversion(monedaOrigen, monedaDestino, cantidadOrigen, cantidadDestino);
+                src.main.java.com.example.demo.JsonGenerator.Conversion conversion = new src.main.java.com.example.demo.JsonGenerator.Conversion(monedaOrigen, monedaDestino, cantidadOrigen, cantidadDestino);
                 conversiones.add(conversion);
                 System.out.printf("%.2f %s equivalen a %.2f %s.\n", cantidadOrigen, monedaOrigen, cantidadDestino, monedaDestino);
             } catch (Exception e) {
