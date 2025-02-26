@@ -80,5 +80,5 @@ Crea una rama para tu nueva funcionalidad (git checkout -b nueva-funcionalidad).
 Haz tus cambios y realiza un commit (git commit -am 'Añadir nueva funcionalidad').
 Envía un pull request.
 Licencia
-Este proyecto está bajo la licencia [nombre de la licencia:by insider], lo que te permite modificar y distribuir el código bajo los términos de la licencia.
+Este proyecto está bajo la licencia [by insider], lo que te permite modificar y distribuir el código bajo los términos de la licencia.
 
